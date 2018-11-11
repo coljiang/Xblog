@@ -40,5 +40,6 @@ class DatabaseSeeder extends Seeder
             });
 
         });
+        App\User::where('id', 1)->update['name' => 'root', 'email' => 'root@test', 'password' =>bcrypt('123456') ];
     }
 }

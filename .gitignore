@@ -11,6 +11,7 @@ _ide_helper.php
 /storage/post
 
 /public/css/
+/public/storage
 /public/fonts/
 /public/js/
 /public/mix-manifest.json
