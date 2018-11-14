@@ -72,5 +72,9 @@
 @includeWhen(!isset($include_footer) || $include_footer, 'layouts.footer')
 <script src="{{ mix('js/app.js') }}"></script>
 @yield('script')
+@if (app()->isLocal())
+    @include('sudosu::user-selector')
+@endif
+
 </body>
 </html>

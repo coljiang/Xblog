@@ -32,5 +32,8 @@ class AppServiceProvider extends ServiceProvider
         $this->app->singleton('XblogConfig', function ($app) {
             return new MapRepository();
         });
+        if (app()->isLocal()) {
+	    $this->app->register(\VIACreative\SudoSu\ServiceProvider::class);
+        }
     }
 }
